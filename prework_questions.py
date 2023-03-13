@@ -50,12 +50,11 @@ def is_leap_year(a_year):
      """Function will state if input is 
      a leap year or not"""
      if a_year % 4 == 0 and a_year % 100 != 0 or a_year % 400 == 0:
-        print(str(a_year) + ", Thats a leap year!\n")
+        return True
      else:
-        print(str(a_year) + " is not a leap year\n")
+        return False
         
-is_leap_year(1990)#Call function
-                  #change 1990 to check accuracy
+print(is_leap_year(1990))#change 1990 to check accuracy
 
 
 # Question 5
@@ -77,14 +76,3 @@ def is_consecutive(a_list):
 
 a_list=[1,2,3]#list for proof of concept
 is_consecutive(a_list)#call function
-    
-  
-
-
-    
-
-
-
-
-
-
